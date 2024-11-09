@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgriNotes1.AddCustomer"
+             Title="Add Customer">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300">
+
+        <Image Source="tomato.png" HeightRequest="185" Aspect="AspectFit" SemanticProperties.Description="logo" Margin="0,-110,0,10" />
+
+        <Entry x:Name="NomeEntry" Placeholder="Nome" WidthRequest="280" Margin="0,10" />
+
+        <!-- Campo Cognome -->
+        <Entry x:Name="CognomeEntry" Placeholder="Cognome" WidthRequest="280" Margin="0,10" />
+
+        <!-- Campo Contrada -->
+        <Entry x:Name="ContradaEntry" Placeholder="Contrada" WidthRequest="280" Margin="0,10" />
+
+        <!-- Campo Cellulare -->
+        <Entry x:Name="CellulareEntry" Placeholder="Cellulare" Keyboard="Telephone" WidthRequest="280" Margin="0,10" />
+
+        <!-- Campo Cultivar -->
+        <Entry x:Name="CultivarEntry" Placeholder="Cultivar" WidthRequest="280" Margin="0,10" />
+
+        <!-- Bottone Salva Cliente -->
+        <Button Text="Salva Cliente" Clicked="OnSaveButtonClicked" WidthRequest="280" Margin="0,20,0,0" />
+
+    </VerticalStackLayout>
+</ContentPage>
